@@ -20,39 +20,49 @@
                     <li class="nav-item"><a class="nav-link" href="add.html">직원 추가</a></li>
                 </ul>
             </div>
-        </div>  
+        </div>
     </nav>
 
-
-
+    <main class="container">
+        <div class="d-flex justify-content-between align-items-center mb-4">
             <h2>직원 목록</h2>
-            <button onclick="location.href='add.html'">직원추가</button>
-            <br><br>
-    
-    <table border="1" width="100%">
-        <thead>
-            <tr>
-                <th>사번</th>
-                <th>이름</th>
-                <th>부서</th>
-                <th>연락처</th>
-                <th>기능</th>
-            </tr>
-        </thead>
-        <tbody>
-            <td>2230001</td>
-            <td>장종우</td>
-            <td>개발</td>
-            <td>010-0101-011</td>
-            <td><a href="view.html">상세보기</a></td>
-        </tbody>
-        <tbody>
-            <td>2230002</td>
-            <td>홍길동</td>
-            <td>디자인</td>
-            <td>010-0202-022</td>
-            <td><a href="view.html">상세보기</a></td>
-        </tbody>
-    </table>
+            <a href="add.html" class="btn btn-primary">직원 추가 [Add]</a>
+        </div>
+
+        <div class="card custom-card">
+            <div class="card-body p-0">
+        <div class="table-responsive">
+                    <table class="table table-hover mb-0 text-center align-middle">
+                        <thead>
+                            <tr>
+                                <th>사번</th>
+                                <th>이름</th>
+                                <th>부서</th>
+                                <th>연락처</th>
+                                <th>관리</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>202301</td>
+                                <td>홍길동</td>
+                                <td><span class="badge bg-info">개발팀</span></td>
+                                <td>010-1234-5678</td>
+                                <td><a href="view.html" class="btn btn-sm btn-outline-secondary">상세보기</a></td>
+                            </tr>
+                            <tr>
+                                <td>202302</td>
+                                <td>김철수</td>
+                                <td><span class="badge bg-warning text-dark">디자인팀</span></td>
+                                <td>010-9876-5432</td>
+                                <td><a href="view.html" class="btn btn-sm btn-outline-secondary">상세보기</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
