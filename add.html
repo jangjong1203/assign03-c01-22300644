@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add</title>
+</head>
+<body>
+    <h1>직원 관리 시스템</h1>
+    <a href="index.html">목록으로</a>
+    <hr>
+
+    <h2>직원 추가</h2>
+        <label>사번: <input type="number" id="empId" placeholder="6자리숫자"></label><br><br>
+        <label>이름: <input type="text" id="name"></label><br><br>
+        <label>부서: 
+            <select id="dept">
+                <option value="">부서 선택</option>
+                <option value="개발팀">개발팀</option>
+                <option value="디자인팀">디자인팀</option>
+                <option value="영업팀">영업팀</option>
+            </select>
+        </label><br><br>
+        <label>이메일: <input type="text" id="email"></label><br><br>
+        <label>연락처: <input type="text" id="phone" placeholder="010-0000-0000"></label><br><br>
+        <label>입사일: <input type="date" id="hireDate"></label><br><br>
+
+        <button type="submit">추가</button>
+        <button type="button" onclick="location.href='index.html'">취소</button>
+    </form>
+    
+</body>
+</html>
